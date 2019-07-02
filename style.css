@@ -1,0 +1,65 @@
+body {
+  background-color: #000032;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+}
+.container {
+  margin: auto;
+  height: 80px;
+  width: 320px;
+  overflow: hidden;
+}
+.cover {
+  background-image: linear-gradient(45deg, #ed0675, #fe8815);
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  transition: 0.5s;
+}
+.content {
+  background-color: #0c2750;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+.content > input[type="email"] {
+  height: 30px;
+  width: 220px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  position: absolute;
+  left: 10px;
+  padding-left: 10px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  outline: none;
+}
+::placeholder {
+  color: #aaa;
+}
+.content > button {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border: none;
+  background-color: #f33155;
+  right: 10px;
+}
+.container:hover .cover,
+.container:hover .content {
+  transform: translateY(-100%);
+}
